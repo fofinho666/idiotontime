@@ -1,28 +1,17 @@
-require('hazardous')
+const {readSettingsFile} = require('./src/idiotontime-configs')
 const { BrowserWindow, app, dialog } = require("electron")
 const pie = require("puppeteer-in-electron")
 const puppeteer = require("puppeteer-core")
-const isDev = require('electron-is-dev')
 const fs = require('fs')
 const yaml = require('js-yaml')
-const path = require('path')
 const idontimeAttrs = require('./src/idontime-attributes')
 const { parse, format, eachDayOfInterval, isWeekend, isValid } = require('date-fns')
 const Holidays = require('date-holidays')
 const UserHolidays = require('./src/user-holidays')
 const { goTo, findByIdAndFillIn, click, waitForNetwork, createEntry } = require('./src/utils')
 
-const settingsPath = (settingsFilename) => {
-  const relativePath = `idiotontime-configs/${settingsFilename}`
-  if (isDev) {
-    return path.join(__dirname, relativePath)
-  }
-  return path.join(app.getPath('home'), relativePath)
-}
-
 const loadUserSettings = () => {
-  const userSettingsPath = settingsPath('settings.yml')
-  const fileContent = fs.readFileSync(userSettingsPath, 'utf8')
+  const fileContent = readSettingsFile()
   return yaml.load(fileContent)
 }
 
@@ -33,7 +22,7 @@ const getDatesToClockIn = (userSettings) => {
   const defaltEndDateString = format(startDate, "dd-MM-yyyy")
   const endDate = parse(userSettings.end_date || defaltEndDateString, "dd-MM-yyyy", todayDate)
   const holidays = new Holidays(userSettings.contry)
-  const userHolidays = new UserHolidays(settingsPath('holidays.txt'))
+  const userHolidays = new UserHolidays()
 
   return eachDayOfInterval({ start: startDate, end: endDate })
     .filter(date => !isWeekend(date))
