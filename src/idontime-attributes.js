@@ -1,5 +1,5 @@
 module.exports = {
-  homeUrl: "https://idontime.vwgs.pt/default.aspx?l=1",
+  homeUrl: "https://idontime.vwgs.pt/default.aspx",
   movUrl: "https://idontime.vwgs.pt/areas/as/asmovimentos.aspx",
   userInput: "cpLogin_txtUtilizador_I",
   passwordInput: "cpLogin_txtSenha_I_CLND",

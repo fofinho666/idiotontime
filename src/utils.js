@@ -36,7 +36,7 @@ const createEntry = async (page, attrs, entryType, entryValue) => {
   await click(frame, entryType)
   await click(frame, attrs.submitEntryButton)
 
-  await page.waitForSelector(`iframe[id="${attrs.addFrame}"]`, {hidden: true})
+  await page.waitForSelector(`iframe[id="${attrs.addFrame}"]`, { hidden: true })
 }
 
 

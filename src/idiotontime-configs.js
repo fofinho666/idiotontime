@@ -1,20 +1,21 @@
 require('hazardous')
+const { app } = require("electron")
 const isDev = require('electron-is-dev')
 const fs = require('fs')
 const path = require('path')
 
-const holidaysFilename = "holidays.txt"
+const holidaysFile = "holidays.txt"
 const defaultHolidays = 'Please add your holidays here. A day per line with the following format: "day-month-year", eg.: 28-02-1904'
 
-const settingsFilename = "settings.yml"
+const settingsFile = "settings.yml"
 const defaultSettings = `---
-user: <your user email goes here>
-password: <your password goes here>
+user: '<your user email goes here>'
+password: '<your password goes here>'
 contry: pt
 time_in: '08:30'
 time_out: '17:30'
-# start_date: "01-02-2021"
-# end_date: "28-02-2021"
+# start_date: '01-02-2021'
+# end_date: '28-02-2021'
 `
 
 const configFoler = "idiotontime-configs"
@@ -26,7 +27,7 @@ const createDefaultFile = (path, defaultContent) => {
 }
 
 const readHolidaysFile = () => {
-  const holidaysPath = `${configsDir}/${holidaysFilename}`
+  const holidaysPath = `${configsDir}/${holidaysFile}`
 
   if (!fs.existsSync(holidaysPath)) {
     if (!fs.existsSync(configsDir)) fs.mkdirSync(configsDir)
@@ -37,7 +38,7 @@ const readHolidaysFile = () => {
 }
 
 const readSettingsFile = () => {
-  const settingsPath = `${configsDir}/${settingsFilename}`
+  const settingsPath = `${configsDir}/${settingsFile}`
 
   if (!fs.existsSync(settingsPath)) {
     if (!fs.existsSync(configsDir)) fs.mkdirSync(configsDir)

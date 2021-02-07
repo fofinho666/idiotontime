@@ -3,3 +3,6 @@ node_modules/
 
 # idiotontime development configs
 idiotontime-configs/
+
+# Releases
+dist/
