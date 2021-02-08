@@ -6,6 +6,7 @@
   "scripts": {
     "postinstall": "electron-builder install-app-deps",
     "start": "electron .",
+    "gen-icon": "electron-icon-builder --input=./assets/icons/original/icon.png --output=./assets/",
     "dist": "electron-builder",
     "dist-all": "electron-builder -mwl",
     "publish": "electron-builder -mwl -p always",
