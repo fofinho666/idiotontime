@@ -1,7 +1,7 @@
 # Dependency directories
 node_modules/
 # idiotontime development configs
-idiotontime-configs/
+IDiotONTIME-configs/
 # Releases
 dist/
 # enviorment file
