@@ -15,11 +15,12 @@ It does not replace the bot. Instead aims to enable anyone that has fear of its 
 
   It will fail, but it will also create the files (on your **home folder**) that you needed to modify. 
   
+- Add your IDONTIME credentials in the "**home folder**/IDiotONTIME-configs/settings.yml" file.
+
   See the following links to figure out your home folder: 
   - [windows](https://www.computerhope.com/issues/ch000109.htm#where)
   - [macOs](https://www.cnet.com/how-to/how-to-find-your-macs-home-folder-and-add-it-to-finder/)
 
-- Add your IDONTIME credentials in the "**home folder**/IDiotONTIME-configs/settings.yml" file.
 
 - Run IDiotONTIME again and you'll be clocked in for today!
 
