@@ -30,13 +30,13 @@ It does not replace the bot. Instead aims to enable anyone that has fear of its 
 This file is where you'll control your bot. It is something like this:
 ```yaml
 ---
-user: <your user email goes here>
-password: <your password goes here>
-country: pt
-time_in: 08:30
-time_out: 17:30
-# start_date: 01-02-2021
-# end_date: 28-02-2021
+user: "<your user email goes here>"
+password: "<your password goes here>"
+country: "pt"
+time_in: "08:30"
+time_out: "17:30"
+# start_date: "01-02-2021"
+# end_date: "28-02-2021"
 ```
 `user` - Your email to access IDONTIME.
 
@@ -56,8 +56,20 @@ The following field will allow you to clock-in for multiple dates.
 
 `end_date` - The date in the future that you want to stop clocking in.
 
+In eg.:
+```yaml
+---
+user: "user@company.com"
+password: "bestpassword"
+country: "pt"
+time_in: "08:30"
+time_out: "17:30"
+start_date: "01-02-2021"
+end_date: "28-02-2021"
+```
+
 ### - holidays.txt file explained
-This file is where you'll set your personal holidays, in order to not clock-in on those days. It is something like this:
+This file is where you'll set your personal holidays, in order to not clock-in on those days. In eg.:
 ```txt
 01-03-2021
 02-03-2021
