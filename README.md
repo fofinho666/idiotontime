@@ -11,9 +11,13 @@ It does not replace the bot. Instead aims to enable anyone that has fear of its 
 ### Setting up:
 - Download the application for your operating system from the [releases](https://github.com/fofinho666/idiotontime/releases) page.
 
-- Run IDiotONTIME for the first time (some warning should pop up, but it's fine trust me 😉 )
+- Run IDiotONTIME for the first time (warnings should pop up, but it's fine trust me 😉 ), it should show you IDONTIME login page.
 
-  It will fail, but it will also create the files (on your **home folder**) that you needed to modify.
+  It will fail, but it will also create the files (on your **home folder**) that you needed to modify. 
+  
+  See the following links to figure out your home folder: 
+  - [windows](https://www.computerhope.com/issues/ch000109.htm#where)
+  - [macOs](https://www.cnet.com/how-to/how-to-find-your-macs-home-folder-and-add-it-to-finder/)
 
 - Add your IDONTIME credentials in the "**home folder**/IDiotONTIME-configs/settings.yml" file.
 
@@ -37,7 +41,7 @@ time_out: 17:30
 
 `password` - Your password to access IDONTIME.
 
-`country` - The country where you work, this is important to figure out your bank holidays.
+`country` - The country where you work, this is important to figure out your **bank holidays**.
 
 `time_in` - The hour that you start working.
 
@@ -45,11 +49,11 @@ time_out: 17:30
 
 The following field will allow you to clock-in for multiple dates.
 
-**Is important to disable or update these flags if you expect a diferent behaviour!**
+**It is important to disable (add `# ` on the begining of the line) or update these fields if you expect a diferent behaviour!**
 
-`start_date` - The date from the past that you wanna start clocking in. Until today or to the `end_date`, if defined.
+`start_date` - The date from the past that you want to start clocking in. Until today or to the `end_date`, if defined.
 
-`end_date` - The date in the future that you wanna stop clocking in.
+`end_date` - The date in the future that you want to stop clocking in.
 
 ### - holidays.txt file explained
 This file is where you'll set your personal holidays, in order to not clock-in on those days. It is something like this:
