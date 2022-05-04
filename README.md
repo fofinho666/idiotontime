@@ -9,22 +9,20 @@ It does not replace the bot. Instead aims to enable anyone that has fear of its 
 ## How does it work?
 
 ### Setting up:
-- Download the application for your operating system from the [releases](https://github.com/fofinho666/idiotontime/releases) page.
+1. Download the application for your operating system from the [releases](https://github.com/fofinho666/idiotontime/releases) page.
 
-- Run IDiotONTIME for the first time (warnings should pop up, but it's fine trust me 😉 ), it should show you IDONTIME login page.
-
-  It will fail, but it will also create the files (on your **home folder**) that you needed to modify. 
+2. Run IDiotONTIME for the first time, by right click on the icon and click open. If a open oprtion is not present try it again.   
+Warnings should pop up, but it's fine trust me 😉, it should show you IDONTIME login page.   
+It will fail, but it will also create the files (on your **home folder**) that you needed to modify. 
   
-- Add your IDONTIME credentials in the "**home folder**/IDiotONTIME-configs/settings.yml" file.
-
+3. Add your IDONTIME credentials in the "**home folder**/IDiotONTIME-configs/settings.yml" file.   
   See the following links to figure out your home folder: 
-  - [windows](https://www.computerhope.com/issues/ch000109.htm#where)
-  - [macOs](https://www.cnet.com/how-to/how-to-find-your-macs-home-folder-and-add-it-to-finder/)
+    - [windows](https://www.computerhope.com/issues/ch000109.htm#where)
+    - [macOs](https://www.cnet.com/how-to/how-to-find-your-macs-home-folder-and-add-it-to-finder/)
 
+4. Run IDiotONTIME again and you'll be clocked in for today!
 
-- Run IDiotONTIME again and you'll be clocked in for today!
-
-- Run IDiot whenever you feel like clock-in.
+5. Run IDiot whenever you feel like clock-in.
 
 ### - settings.yml file explained
 This file is where you'll control your bot. It is something like this:
